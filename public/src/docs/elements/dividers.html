@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('_head.html')
+</head>
+<body>
+  <div class="content-wrapper">
+    <header class="wrapper bg-soft-primary">
+      @@include('_navbar.html', {
+        "classList": "center-nav transparent navbar-light",
+        "otherClassList": "w-100 d-flex ms-auto",
+        "otherLanguageSelect": true,
+        "otherBtn": true,
+        "otherBtnClassList": "btn-sm btn-primary rounded-pill",
+        "otherBtnText": "Contact",
+        "otherBtnLink": "@@webRoot/contact.html"
+      })
+    </header>
+    <!-- /header -->
+    <section class="wrapper bg-soft-primary">
+      <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+        <div class="row">
+          <div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
+            <h1 class="display-1 mb-3">Dividers</h1>
+            <p class="lead px-xxl-10">Use our custom dividers to divide sections or elements.</p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <div class="container">
+      <div class="row">
+        @@include('docs/_sidebar.html', {"page": "elements-dividers"})
+        <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+          <div class="widget">
+            <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+            <nav class="ps-xl-5" id="sidebar-nav">
+              <ul class="list-unstyled fs-sm lh-sm text-reset">
+                <li><a class="nav-link scroll active" href="#snippet-1">Borders</a></li>
+                <li><a class="nav-link scroll" href="#snippet-2">Angles</a></li>
+                <li><a class="nav-link scroll" href="#snippet-3">Waves</a></li>
+                <li><a class="nav-link scroll" href="#snippet-4">Vertical</a></li>
+              </ul>
+            </nav>
+          <!-- /nav -->
+          </div>
+          <!-- /.widget -->
+        </aside>
+        <!-- /column -->
+        <div class="col-xl-8 order-xl-2">
+          <section id="snippet-1" class="wrapper pt-16">
+            <h2 class="mb-5">Borders</h2>
+            <div class="card">
+              <div class="card-body">
+                <hr class="my-8" />
+                
+                <hr class="double my-12" />
+                
+                <div class="divider-icon mt-8 mb-15"><i class="uil uil-heart"></i></div>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-1">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;!-- Simple --&gt;
+&lt;hr class=&quot;my-8&quot; /&gt;
+
+&lt;!-- Double --&gt;
+&lt;hr class=&quot;double my-8&quot; /&gt;
+
+&lt;!-- Icon --&gt;
+&lt;div class=&quot;divider-icon my-8&quot;&gt;&lt;i class=&quot;uil uil-heart&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-2" class="wrapper pt-16">
+            <h2 class="mb-5">Angles</h2>
+            <div class="card">
+              <div class="card-body">
+                <figure class="position-relative mb-10"><img class="img-fluid" src="@@webRoot/assets/img/docs/angle-lower-start.jpg" alt=""><span class="display-6 text-navy" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">Lower Start</span></figure>
+                <figure class="position-relative"><img class="img-fluid" src="@@webRoot/assets/img/docs/angle-lower-end.jpg" alt=""><span class="display-6 text-navy" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">Lower End</span></figure>
+                <figure class="position-relative mb-10"><img class="img-fluid" src="@@webRoot/assets/img/docs/angle-upper-start.jpg" alt=""><span class="display-6 text-navy" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">Upper Start</span></figure>
+                <figure class="position-relative mb-10"><img class="img-fluid" src="@@webRoot/assets/img/docs/angle-upper-end.jpg" alt=""><span class="display-6 text-navy" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">Upper End</span></figure>
+                <figure class="position-relative mb-10"><img class="img-fluid" src="@@webRoot/assets/img/docs/angle-upper-end-lower-start.jpg" alt=""><span class="display-6 text-navy" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">Upper End & Lower Start</span></figure>
+                <figure class="position-relative"><img class="img-fluid" src="@@webRoot/assets/img/docs/angle-upper-start-lower-end.jpg" alt=""><span class="display-6 text-navy" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">Upper Start & Lower End</span></figure>
+                <figure class="position-relative"><img class="img-fluid" src="@@webRoot/assets/img/docs/angle-upper-start-lower-start.jpg" alt=""><span class="display-6 text-navy" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">Upper Start & Lower Start</span></figure>
+                <figure class="position-relative"><img class="img-fluid" src="@@webRoot/assets/img/docs/angle-upper-end-lower-end.jpg" alt=""><span class="display-6 text-navy" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">Upper End & Lower End</span></figure>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-2">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-2" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;!-- Lower Start --&gt;
+&lt;section class=&quot;wrapper bg-soft-primary angled lower-start&quot;&gt;&lt;/section&gt;
+ 
+&lt;!-- Lower End --&gt; 
+&lt;section class=&quot;wrapper bg-soft-primary angled lower-end&quot;&gt;&lt;/section&gt;
+ 
+&lt;!-- Upper Start --&gt; 
+&lt;section class=&quot;wrapper bg-soft-primary angled upper-start&quot;&gt;&lt;/section&gt;
+
+&lt;!-- Upper End --&gt;
+&lt;section class=&quot;wrapper bg-soft-primary angled upper-end&quot;&gt;&lt;/section&gt;
+
+&lt;!-- Upper End & Lower Start --&gt;
+&lt;section class=&quot;wrapper bg-soft-primary angled upper-end lower-start&quot;&gt;&lt;/section&gt;
+
+&lt;!-- Upper Start & Lower End --&gt;
+&lt;section class=&quot;wrapper bg-soft-primary angled upper-start lower-end&quot;&gt;&lt;/section&gt;
+
+&lt;!-- Upper Start & Lower Start --&gt;
+&lt;section class=&quot;wrapper bg-soft-primary angled upper-start lower-start&quot;&gt;&lt;/section&gt;
+
+&lt;!-- Upper End & Lower End --&gt;
+&lt;section class=&quot;wrapper bg-soft-primary angled upper-end lower-end&quot;&gt;&lt;/section&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-3" class="wrapper pt-16">
+            <h2 class="mb-5">Waves</h2>
+            <div class="card">
+              <div class="card-body">
+                <section class="wrapper bg-soft-primary mb-5">
+                  <div class="container py-5 py-md-7"><h2 class="h6 text-center mb-0">Wave 1</h2></div>
+                  <div class="overflow-hidden"><div class="divider text-white mx-n2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 70"><path fill="currentColor" d="M1440,70H0V45.16a5762.49,5762.49,0,0,1,1440,0Z"/></svg></div></div>
+                </section>
+                <!-- /section -->
+                <section class="wrapper bg-soft-primary mb-5">
+                  <div class="container py-5 py-md-7"><h2 class="h6 text-center mb-0">Wave 2</h2></div>
+                  <div class="overflow-hidden"><div class="divider text-white mx-n2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60"><path fill="currentColor" d="M0,0V60H1440V0A5771,5771,0,0,1,0,0Z"/></svg></div></div>
+                </section>
+                <!-- /section -->
+                <section class="wrapper bg-soft-primary mb-5">
+                  <div class="container py-5 py-md-7"><h2 class="h6 text-center mb-0">Wave 3</h2></div>
+                  <div class="overflow-hidden"><div class="divider text-white mx-n2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 92.26"><path fill="currentColor" d="M1206,21.2c-60-5-119-36.92-291-5C772,51.11,768,48.42,708,43.13c-60-5.68-108-29.92-168-30.22-60,.3-147,27.93-207,28.23-60-.3-122-25.94-182-36.91S30,5.93,0,16.2V92.26H1440v-87l-30,5.29C1348.94,22.29,1266,26.19,1206,21.2Z"/></svg></div></div>
+                </section>
+                <!-- /section -->
+                <section class="wrapper bg-soft-primary mb-5">
+                  <div class="container py-5 py-md-7"><h2 class="h6 text-center mb-0">Wave 4</h2></div>
+                  <div class="overflow-hidden"><div class="divider text-white mx-n2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"><path fill="currentColor" d="M1260,1.65c-60-5.07-119.82,2.47-179.83,10.13s-120,11.48-180,9.57-120-7.66-180-6.42c-60,1.63-120,11.21-180,16a1129.52,1129.52,0,0,1-180,0c-60-4.78-120-14.36-180-19.14S60,7,30,7H0v93H1440V30.89C1380.07,23.2,1319.93,6.15,1260,1.65Z"/></svg></div></div>
+                </section>
+                <!-- /section -->
+                <section class="wrapper bg-soft-primary mb-5">
+                  <div class="container py-5 py-md-7"><h2 class="h6 text-center mb-0">Wave 5</h2></div>
+                  <div class="overflow-hidden"><div class="divider text-white mx-n2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"><path fill="currentColor" d="M1260.2,37.86c-60-10-120-20.07-180-16.76-60,3.71-120,19.77-180,18.47-60-1.71-120-21.78-180-31.82s-120-10-180-1.7c-60,8.73-120,24.79-180,28.5-60,3.31-120-6.73-180-11.74s-120-5-150-5H0V100H1440V49.63C1380.07,57.9,1320.13,47.88,1260.2,37.86Z"/></svg></div></div>
+                </section>
+                <!-- /section -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-3">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-3" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;!-- Wave 1 --&gt;
+&lt;div class=&quot;overflow-hidden&quot;&gt;
+  &lt;div class=&quot;divider text-white mx-n2&quot;&gt;
+    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1440 70&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M1440,70H0V45.16a5762.49,5762.49,0,0,1,1440,0Z&quot;/&gt;&lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /.overflow-hidden --&gt;
+    
+&lt;!-- Wave 2 --&gt;
+&lt;div class=&quot;overflow-hidden&quot;&gt;
+  &lt;div class=&quot;divider text-white mx-n2&quot;&gt;
+    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1440 60&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M0,0V60H1440V0A5771,5771,0,0,1,0,0Z&quot;/&gt;&lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /.overflow-hidden --&gt;
+    
+&lt;!-- Wave 3 --&gt;
+&lt;div class=&quot;overflow-hidden&quot;&gt;
+  &lt;div class=&quot;divider text-white mx-n2&quot;&gt;
+    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1440 92.26&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M1206,21.2c-60-5-119-36.92-291-5C772,51.11,768,48.42,708,43.13c-60-5.68-108-29.92-168-30.22-60,.3-147,27.93-207,28.23-60-.3-122-25.94-182-36.91S30,5.93,0,16.2V92.26H1440v-87l-30,5.29C1348.94,22.29,1266,26.19,1206,21.2Z&quot;/&gt;&lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /.overflow-hidden --&gt;
+    
+&lt;!-- Wave 4 --&gt;
+&lt;div class=&quot;overflow-hidden&quot;&gt;
+  &lt;div class=&quot;divider text-white mx-n2&quot;&gt;
+    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1440 100&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M1260,1.65c-60-5.07-119.82,2.47-179.83,10.13s-120,11.48-180,9.57-120-7.66-180-6.42c-60,1.63-120,11.21-180,16a1129.52,1129.52,0,0,1-180,0c-60-4.78-120-14.36-180-19.14S60,7,30,7H0v93H1440V30.89C1380.07,23.2,1319.93,6.15,1260,1.65Z&quot;/&gt;&lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /.overflow-hidden --&gt;
+    
+&lt;!-- Wave 5 --&gt;
+&lt;div class=&quot;overflow-hidden&quot;&gt;
+  &lt;div class=&quot;divider text-white mx-n2&quot;&gt;
+    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1440 100&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M1260.2,37.86c-60-10-120-20.07-180-16.76-60,3.71-120,19.77-180,18.47-60-1.71-120-21.78-180-31.82s-120-10-180-1.7c-60,8.73-120,24.79-180,28.5-60,3.31-120-6.73-180-11.74s-120-5-150-5H0V100H1440V49.63C1380.07,57.9,1320.13,47.88,1260.2,37.86Z&quot;/&gt;&lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /.overflow-hidden --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-4" class="wrapper py-16">
+            <h2 class="mb-5">Vertical</h2>
+            <div class="card">
+              <div class="card-body">
+                <section class="wrapper bg-gray position-relative min-vh-30 d-lg-flex align-items-center mb-10">
+                  <div class="col-lg-6 position-lg-absolute top-0 end-0 image-wrapper bg-image bg-cover h-100" data-image-src="@@webRoot/assets/img/photos/bg39.jpg">
+                    <div class="divider text-gray divider-v-start d-none d-lg-block">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 1200"><g /><g><g><polygon fill="currentColor" points="6 0 0 0 0 1200 6 1200 54 0 6 0"/></g></g></svg>
+                    </div>
+                  </div>
+                  <!--/column -->
+                  <div class="container">
+                    <div class="row gx-0">
+                      <div class="col-lg-6">
+                        <div class="pt-13 pb-15 pb-md-17 py-lg-16 pe-lg-15 position-relative">
+                          <span class="display-6 text-navy" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">Start</span>
+                        </div>
+                      </div>
+                      <!--/column -->
+                    </div>
+                    <!--/.row -->
+                  </div>
+                  <!-- /.container -->
+                </section>
+                <!-- /section -->
+                <section class="wrapper bg-gray position-relative min-vh-30 d-lg-flex align-items-center">
+                  <div class="col-lg-6 position-lg-absolute top-0 start-0 image-wrapper bg-image bg-cover h-100" data-image-src="@@webRoot/assets/img/photos/bg38.jpg">
+                    <div class="divider text-gray divider-v-end d-none d-lg-block">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 1200"><g/><g><g><polygon fill="currentColor" points="48 0 0 0 48 1200 54 1200 54 0 48 0"/></g></g></svg>
+                    </div>
+                  </div>
+                  <!--/column -->
+                  <div class="container">
+                    <div class="row gx-0">
+                      <div class="col-lg-6 ms-auto">
+                        <div class="pt-13 pb-15 pb-md-17 py-lg-16 ps-lg-15 pe-xxl-16 position-relative">
+                          <span class="display-6 text-navy" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">End</span>
+                        </div>
+                      </div>
+                      <!--/column -->
+                    </div>
+                    <!--/.row -->
+                  </div>
+                  <!-- /.container -->
+                </section>
+                <!-- /section -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-4">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-4" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;!-- Start --&gt;
+&lt;section class=&quot;wrapper bg-gray position-relative min-vh-60 d-lg-flex align-items-center mb-10&quot;&gt;
+  &lt;div class=&quot;col-lg-6 position-lg-absolute top-0 end-0 image-wrapper bg-image bg-cover h-100&quot; data-image-src=&quot;./assets/img/photos/bg39.jpg&quot;&gt;
+    &lt;div class=&quot;divider text-gray divider-v-start d-none d-lg-block&quot;&gt;
+      &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 54 1200&quot;&gt;&lt;g /&gt;&lt;g&gt;&lt;g&gt;&lt;polygon fill=&quot;currentColor&quot; points=&quot;6 0 0 0 0 1200 6 1200 54 0 6 0&quot;/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!--/column --&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row gx-0&quot;&gt;
+      &lt;div class=&quot;col-lg-6&quot;&gt;
+        &lt;div class=&quot;pt-13 pb-15 pb-md-17 py-lg-16 pe-lg-15 position-relative&quot;&gt;
+          Content here
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!--/column --&gt;
+    &lt;/div&gt;
+    &lt;!--/.row --&gt;
+  &lt;/div&gt;
+  &lt;!-- /.container --&gt;
+&lt;/section&gt;
+&lt;!-- /section --&gt;
+
+
+&lt;!-- End --&gt;
+&lt;section class=&quot;wrapper bg-gray position-relative min-vh-60 d-lg-flex align-items-center&quot;&gt;
+&lt;div class=&quot;col-lg-6 position-lg-absolute top-0 start-0 image-wrapper bg-image bg-cover h-100&quot; data-image-src=&quot;./assets/img/photos/bg38.jpg&quot;&gt;
+  &lt;div class=&quot;divider text-gray divider-v-end d-none d-lg-block&quot;&gt;
+    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 54 1200&quot;&gt;&lt;g/&gt;&lt;g&gt;&lt;g&gt;&lt;polygon fill=&quot;currentColor&quot; points=&quot;48 0 0 0 48 1200 54 1200 54 0 48 0&quot;/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--/column --&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row gx-0&quot;&gt;
+    &lt;div class=&quot;col-lg-6 ms-auto&quot;&gt;
+      &lt;div class=&quot;pt-13 pb-15 pb-md-17 py-lg-16 ps-lg-15 pe-xxl-16 position-relative&quot;&gt;
+        Content Here
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--/column --&gt;
+  &lt;/div&gt;
+  &lt;!--/.row --&gt;
+&lt;/div&gt;
+&lt;!-- /.container --&gt;
+&lt;/section&gt;
+&lt;!-- /section --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  @@include('docs/_footer.html')
+  @@include('_page-progress.html')
+  @@include('_scripts.html')
+</body>
+</html>

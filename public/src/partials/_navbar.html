@@ -1,0 +1,94 @@
+<nav class="navbar navbar-expand-lg @@classList">
+  @@if (!context.fancy) {
+    <div class="container flex-lg-row flex-nowrap align-items-center">
+  }
+  @@if (context.fancy) {
+    <div class="container">
+    <div class="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center">
+  }
+    <div class="navbar-brand w-100">
+      <a href="@@webRoot/index.html">
+        @@if (!context.logoBoth) {       
+          @@if (!context.logoLight) {
+            <img src="@@webRoot/assets/img/@@if(context.logoAlt){@@logoAlt}@@if(!context.logoAlt){logo}.png" srcset="@@webRoot/assets/img/@@if(context.logoAlt){@@logoAlt}@@if(!context.logoAlt){logo}@2x.png 2x" alt="" />
+          }
+          @@if (context.logoLight) {
+            <img src="@@webRoot/assets/img/logo-light.png" srcset="@@webRoot/assets/img/logo-light@2x.png 2x" alt="" />
+          }
+        }
+        @@if (context.logoBoth) {
+          <img class="logo-dark" src="@@webRoot/assets/img/@@if(context.logoAlt){@@logoAlt}@@if(!context.logoAlt){logo}.png" srcset="@@webRoot/assets/img/@@if(context.logoAlt){@@logoAlt}@@if(!context.logoAlt){logo}@2x.png 2x" alt="" />
+          <img class="logo-light" src="@@webRoot/assets/img/logo-light.png" srcset="@@webRoot/assets/img/logo-light@2x.png 2x" alt="" />
+        }
+      </a>
+    </div>
+    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+      <div class="offcanvas-header d-lg-none">
+        <h3 class="text-white fs-30 mb-0">Sandbox</h3>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+        @@if (!context.onePage && !context.onePageDemo) {
+          @@if (!context.docs) {
+            @@include('_menu-links.html')
+          }
+          @@if (context.docs) {
+            @@include('docs/_menu-links.html')
+          }
+        }
+        @@if (context.onePage) {
+          @@include('_menu-links-onepage.html')
+        }
+        @@if (context.onePageDemo) {
+          @@include('_menu-links-onepage-demo.html')
+        }
+        <div class="offcanvas-footer d-lg-none">
+          @@include('_menu-offcanvas-footer.html')
+        </div>
+        <!-- /.offcanvas-footer -->
+      </div>
+      <!-- /.offcanvas-body -->
+    </div>
+    <!-- /.navbar-collapse -->
+    @@include('_menu-others.html', {
+        "classList": "@@otherClassList",
+        "btn": "@@otherBtn",
+        "btnClassList": "@@otherBtnClassList",
+        "btnText": "@@otherBtnText",
+        "btnLink": "@@otherBtnLink",
+        "btnModal": "@@otherBtnModal",
+        "link": "@@otherLink",
+        "linkText": "@@otherLinkText",
+        "linkLink": "@@otherLinkLink",
+        "linkModal": "@@otherLinkModal",
+        "linksNewTab": "@@otherLinksNewTab",
+        "languageSelect": "@@otherLanguageSelect",
+        "social": "@@otherSocial",
+        "search": "@@otherSearch",
+        "shop": "@@otherShop",
+        "info": "@@otherInfo"
+    })
+  @@if (!context.fancy) {
+    </div>
+    <!-- /.container -->
+  }
+  @@if (context.fancy) {
+      </div>
+      <!-- /.navbar-collapse-wrapper -->
+    </div>
+    <!-- /.container -->
+  }
+</nav>
+<!-- /.navbar -->
+@@if (context.otherBtnModal || context.otherLinkModal) {
+  @@include('_menu-others-modal.html')
+}
+@@if (context.otherInfo) {
+  @@include('_menu-others-offcanvas-info.html')
+}
+@@if (context.otherShop) {
+  @@include('_menu-others-cart.html')
+}
+@@if (context.otherSearch) {
+  @@include('_menu-others-search.html')
+}

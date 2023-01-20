@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('_head.html')
+</head>
+<body>
+  <div class="content-wrapper">
+    <header class="wrapper bg-light">
+      @@include('_navbar.html', {
+        "classList": "center-nav navbar-light navbar-bg-light",
+        "otherClassList": "w-100 d-flex ms-auto",
+        "otherShop": true,
+        "otherSearch": true
+      })
+    </header>
+    <!-- /header -->
+    <section class="wrapper bg-gray">
+      <div class="container py-3 py-md-5">
+        <nav class="d-inline-block" aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Shop</a></li>
+            <li class="breadcrumb-item active text-muted" aria-current="page">Cart</li>
+          </ol>
+        </nav>
+        <!-- /nav -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section class="wrapper bg-light">
+      <div class="container pt-12 pt-md-14 pb-14 pb-md-16">
+        <div class="row gx-md-8 gx-xl-12 gy-12">
+          <div class="col-lg-8">
+            <div class="table-responsive">
+              <table class="table text-center shopping-cart">
+                <thead>
+                  <tr>
+                    <th class="ps-0 w-25">
+                      <div class="h4 mb-0 text-start">Product</div>
+                    </th>
+                    <th>
+                      <div class="h4 mb-0">Price</div>
+                    </th>
+                    <th>
+                      <div class="h4 mb-0">Quantity</div>
+                    </th>
+                    <th>
+                      <div class="h4 mb-0">Total</div>
+                    </th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="option text-start d-flex flex-row align-items-center ps-0">
+                      <figure class="rounded w-17"><a href="@@webRoot/shop-product.html"><img src="@@webRoot/assets/img/photos/sth1.jpg" srcset="@@webRoot/assets/img/photos/sth1@2x.jpg 2x" alt="" /></a></figure>
+                      <div class="w-100 ms-4">
+                        <h3 class="post-title h6 lh-xs mb-1"><a href="@@webRoot/shop-product.html" class="link-dark">Nike Air Sneakers</a></h3>
+                        <div class="small">Color: Black</div>
+                        <div class="small">Size: 43</div>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="price"><del><span class="amount">$55.00</span></del> <ins><span class="amount">$45.99</span></ins></p>
+                    </td>
+                    <td>
+                      <div class="form-select-wrapper">
+                        <select class="form-select form-select-sm mx-auto">
+                          <option value="1" selected>1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </div>
+                      <!--/.form-select-wrapper -->
+                    </td>
+                    <td>
+                      <p class="price"><span class="amount">$45.99</span></p>
+                    </td>
+                    <td class="pe-0">
+                      <a href="#" class="link-dark"><i class="uil uil-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="option text-start d-flex flex-row align-items-center ps-0">
+                      <figure class="rounded w-17"><a href="@@webRoot/shop-product.html"><img src="@@webRoot/assets/img/photos/sth2.jpg" srcset="@@webRoot/assets/img/photos/sth2@2x.jpg 2x" alt="" /></a></figure>
+                      <div class="w-100 ms-4">
+                        <h3 class="post-title h6 lh-xs mb-1"><a href="@@webRoot/shop-product.html" class="link-dark">Colorful Sneakers</a></h3>
+                        <div class="small">Color: Misc</div>
+                        <div class="small">Size: 43</div>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="price"><span class="amount">$45.00</span></p>
+                    </td>
+                    <td>
+                      <div class="form-select-wrapper">
+                        <select class="form-select form-select-sm mx-auto">
+                          <option value="1" selected>1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </div>
+                      <!--/.form-select-wrapper -->
+                    </td>
+                    <td>
+                      <p class="price"><span class="amount">$45.00</span></p>
+                    </td>
+                    <td class="pe-0">
+                      <a href="#" class="link-dark"><i class="uil uil-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="option text-start d-flex flex-row align-items-center ps-0">
+                      <figure class="rounded w-17"><a href="@@webRoot/shop-product.html"><img src="@@webRoot/assets/img/photos/sth3.jpg" srcset="@@webRoot/assets/img/photos/sth3@2x.jpg 2x" alt="" /></a></figure>
+                      <div class="w-100 ms-4">
+                        <h3 class="post-title h6 lh-xs mb-1"><a href="@@webRoot/shop-product.html" class="link-dark">Polaroid Camera</a></h3>
+                        <div class="small">Color: Black</div>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="price"><span class="amount">$45.00</span></p>
+                    </td>
+                    <td>
+                      <div class="form-select-wrapper">
+                        <select class="form-select form-select-sm mx-auto">
+                          <option value="1" selected>1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </div>
+                      <!--/.form-select-wrapper -->
+                    </td>
+                    <td>
+                      <p class="price"><span class="amount">$45.00</span></p>
+                    </td>
+                    <td class="pe-0">
+                      <a href="#" class="link-dark"><i class="uil uil-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- /.table-responsive -->
+            <div class="row mt-0 gy-4">
+              <div class="col-md-8 col-lg-7">
+                <div class="form-floating input-group">
+                  <input type="url" class="form-control" placeholder="Enter promo code" id="seo-check">
+                  <label for="seo-check">Enter promo code</label>
+                  <button class="btn btn-primary" type="button">Apply</button>
+                </div>
+                <!-- /.input-group -->
+              </div>
+              <!-- /column -->
+              <div class="col-md-4 col-lg-5 ms-auto ms-lg-0 text-md-end">
+                <a href="#" class="btn btn-primary rounded">Update Cart</a>
+              </div>
+              <!-- /column -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /column -->
+          <div class="col-lg-4">
+            <h3 class="mb-4">Order Summary</h3>
+            <div class="table-responsive">
+              <table class="table table-order">
+                <tbody>
+                  <tr>
+                    <td class="ps-0"><strong class="text-dark">Subtotal</strong></td>
+                    <td class="pe-0 text-end"><p class="price">$135.99</p></td>
+                  </tr>
+                  <tr>
+                    <td class="ps-0"><strong class="text-dark">Discount (5%)</strong></td>
+                    <td class="pe-0 text-end"><p class="price text-red">-$6.8</p></td>
+                  </tr>
+                  <tr>
+                    <td class="ps-0"><strong class="text-dark">Shipping</strong></td>
+                    <td class="pe-0 text-end"><p class="price">$10</p></td>
+                  </tr>
+                  <tr>
+                    <td class="ps-0"><strong class="text-dark">Grand Total</strong></td>
+                    <td class="pe-0 text-end"><p class="price text-dark fw-bold">$152.79</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <a href="#" class="btn btn-primary rounded w-100 mt-4">Proceed to Checkout</a>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section class="wrapper bg-gray">
+      <div class="container py-12 py-md-14">
+        <div class="row gx-lg-8 gx-xl-12 gy-8">
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="@@webRoot/assets/img/icons/solid/shipment.svg" class="svg-inject icon-svg icon-svg-sm solid-mono text-navy me-4" alt="" />
+              </div>
+              <div>
+                <h4 class="mb-1">Free Shipping</h4>
+                <p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="@@webRoot/assets/img/icons/solid/push-cart.svg" class="svg-inject icon-svg icon-svg-sm solid-mono text-navy me-4" alt="" />
+              </div>
+              <div>
+                <h4 class="mb-1">30 Days Return</h4>
+                <p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="@@webRoot/assets/img/icons/solid/verify.svg" class="svg-inject icon-svg icon-svg-sm solid-mono text-navy me-4" alt="" />
+              </div>
+              <div>
+                <h4 class="mb-1">2-Years Warranty</h4>
+                <p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="bg-dark text-inverse">
+    <div class="container py-13 py-md-15">
+      @@include('_footer-widgets.html', {
+        "lightText": true
+      })
+    </div>
+    <!-- /.container -->
+  </footer>
+  @@include('_page-progress.html')
+  @@include('_scripts.html')
+</body>
+</html>

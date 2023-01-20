@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('_head.html')
+</head>
+<body>
+  <div class="content-wrapper">
+    <header class="wrapper bg-soft-primary">
+      @@include('_navbar.html', {
+        "classList": "center-nav transparent navbar-light",
+        "otherClassList": "w-100 d-flex ms-auto",
+        "otherLanguageSelect": true,
+        "otherBtn": true,
+        "otherBtnClassList": "btn-sm btn-primary rounded-pill",
+        "otherBtnText": "Contact",
+        "otherBtnLink": "@@webRoot/contact.html"
+      })
+    </header>
+    <!-- /header -->
+    <section class="wrapper bg-soft-primary">
+      <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+        <div class="row">
+          <div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
+            <h1 class="display-1 mb-3">Carousel</h1>
+            <p class="lead px-xxl-2">Here you can find simple carousel examples and usage instructions. For further carousel documentation please visit <a href="https://swiperjs.com" target="_blank" class="hover more">Swiper docs</a></p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <div class="container">
+      <div class="row">
+        @@include('docs/_sidebar.html', {"page": "elements-carousel"})
+        <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+          <div class="widget">
+            <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+            <nav class="ps-xl-5" id="sidebar-nav">
+              <ul class="list-unstyled fs-sm lh-sm text-reset">
+                <li><a class="nav-link scroll active" href="#snippet-1">Simple Carousel</a></li>
+                <li><a class="nav-link scroll" href="#snippet-2">Card Carousel</a></li>
+                <li><a class="nav-link scroll" href="#snippet-3">Text Slider</a></li>
+                <li><a class="nav-link scroll" href="#snippet-4">Image Slider</a></li>
+                <li><a class="nav-link scroll" href="#snippet-5">Thumbnail Slider</a></li>
+                <li><a class="nav-link scroll" href="#instructions">Instructions</a></li>
+              </ul>
+            </nav>
+          <!-- /nav -->
+          </div>
+          <!-- /.widget -->
+        </aside>
+        <!-- /column -->
+        <div class="col-xl-8 order-xl-2">
+          <section id="snippet-1" class="wrapper pt-16">
+            <h2 class="mb-5">Simple Carousel</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="swiper-container mb-10" data-margin="30" data-nav="true" data-dots="true" data-items-xl="3" data-items-md="2" data-items-xs="1">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <figure class="overlay overlay-1 hover-scale rounded mb-0"><a href="#"> <img src="@@webRoot/assets/img/photos/p1.jpg" srcset="@@webRoot/assets/img/photos/p1@2x.jpg 2x" alt="" /></a>
+                          <figcaption>
+                            <h5 class="from-top mb-0">Read More</h5>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <!--/.swiper-slide -->
+                      <div class="swiper-slide">
+                        <figure class="overlay overlay-1 hover-scale rounded mb-0"><a href="#"> <img src="@@webRoot/assets/img/photos/p2.jpg" srcset="@@webRoot/assets/img/photos/p2@2x.jpg 2x" alt="" /></a>
+                          <figcaption>
+                            <h5 class="from-top mb-0">Read More</h5>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <!--/.swiper-slide -->
+                      <div class="swiper-slide">
+                        <figure class="overlay overlay-1 hover-scale rounded mb-0"><a href="#"> <img src="@@webRoot/assets/img/photos/p3.jpg" srcset="@@webRoot/assets/img/photos/p3@2x.jpg 2x" alt="" /></a>
+                          <figcaption>
+                            <h5 class="from-top mb-0">Read More</h5>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <!--/.swiper-slide -->
+                      <div class="swiper-slide">
+                        <figure class="overlay overlay-1 hover-scale rounded mb-0"><a href="#"> <img src="@@webRoot/assets/img/photos/p4.jpg" srcset="@@webRoot/assets/img/photos/p4@2x.jpg 2x" alt="" /></a>
+                          <figcaption>
+                            <h5 class="from-top mb-0">Read More</h5>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <!--/.swiper-slide -->
+                      <div class="swiper-slide">
+                        <figure class="overlay overlay-1 hover-scale rounded mb-0"><a href="#"> <img src="@@webRoot/assets/img/photos/p5.jpg" srcset="@@webRoot/assets/img/photos/p5@2x.jpg 2x" alt="" /></a>
+                          <figcaption>
+                            <h5 class="from-top mb-0">Read More</h5>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <!--/.swiper-slide -->
+                    </div>
+                    <!--/.swiper-wrapper -->
+                  </div>
+                  <!-- /.swiper -->
+                </div>
+                <!-- /.swiper-container -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-1">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;swiper-container mb-10&quot; data-margin=&quot;30&quot; data-nav=&quot;true&quot; data-dots=&quot;true&quot; data-items-xl=&quot;3&quot; data-items-md=&quot;2&quot; data-items-xs=&quot;1&quot;&gt;
+  &lt;div class=&quot;swiper&quot;&gt;
+    &lt;div class=&quot;swiper-wrapper&quot;&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        ...
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        ...
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        ...
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        ...
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        ...
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+    &lt;/div&gt;
+    &lt;!--/.swiper-wrapper --&gt;
+  &lt;/div&gt;
+  &lt;!-- /.swiper --&gt;
+&lt;/div&gt;
+&lt;!-- /.swiper-container --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-2" class="wrapper pt-16">
+            <h2 class="mb-5">Card Carousel</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="swiper-container dots-closer blog grid-view mb-6" data-margin="0" data-dots="true" data-items-md="2" data-items-xs="1">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="item-inner">
+                          <article>
+                            <div class="card">
+                              <div class="card-body">
+                                <p>Duis mollis est non commodo luctu, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p>
+                              </div>
+                              <!--/.card-body -->
+                            </div>
+                            <!-- /.card -->
+                          </article>
+                          <!-- /article -->
+                        </div>
+                        <!-- /.item-inner -->
+                      </div>
+                      <!--/.swiper-slide -->
+                      <div class="swiper-slide">
+                        <div class="item-inner">
+                          <article>
+                            <div class="card">
+                              <div class="card-body">
+                                <p>Duis mollis est non commodo luctu, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p>
+                              </div>
+                              <!--/.card-body -->
+                            </div>
+                            <!-- /.card -->
+                          </article>
+                          <!-- /article -->
+                        </div>
+                        <!-- /.item-inner -->
+                      </div>
+                      <!--/.swiper-slide -->
+                      <div class="swiper-slide">
+                        <div class="item-inner">
+                          <article>
+                            <div class="card">
+                              <div class="card-body">
+                                <p>Duis mollis est non commodo luctu, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p>
+                              </div>
+                              <!--/.card-body -->
+                            </div>
+                            <!-- /.card -->
+                          </article>
+                          <!-- /article -->
+                        </div>
+                        <!-- /.item-inner -->
+                      </div>
+                      <!--/.swiper-slide -->
+                      <div class="swiper-slide">
+                        <div class="item-inner">
+                          <article>
+                            <div class="card">
+                              <div class="card-body">
+                                <p>Duis mollis est non commodo luctu, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p>
+                              </div>
+                              <!--/.card-body -->
+                            </div>
+                            <!-- /.card -->
+                          </article>
+                          <!-- /article -->
+                        </div>
+                        <!-- /.item-inner -->
+                      </div>
+                      <!--/.swiper-slide -->
+                    </div>
+                    <!--/.swiper-wrapper -->
+                  </div>
+                  <!-- /.swiper -->
+                </div>
+                <!-- /.swiper-container -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-2">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-2" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;swiper-container dots-closer blog grid-view mb-6&quot; data-margin=&quot;0&quot; data-dots=&quot;true&quot; data-items-md=&quot;2&quot; data-items-xs=&quot;1&quot;&gt;
+  &lt;div class=&quot;swiper&quot;&gt;
+    &lt;div class=&quot;swiper-wrapper&quot;&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        &lt;div class=&quot;item-inner&quot;&gt;
+          &lt;article&gt;
+            &lt;div class=&quot;card&quot;&gt;
+              &lt;div class=&quot;card-body&quot;&gt;
+                ...
+              &lt;/div&gt;
+              &lt;!--/.card-body --&gt;
+            &lt;/div&gt;
+            &lt;!-- /.card --&gt;
+          &lt;/article&gt;
+          &lt;!-- /article --&gt;
+        &lt;/div&gt;
+        &lt;!-- /.item-inner --&gt;
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        &lt;div class=&quot;item-inner&quot;&gt;
+          &lt;article&gt;
+            &lt;div class=&quot;card&quot;&gt;
+              &lt;div class=&quot;card-body&quot;&gt;
+                ...
+              &lt;/div&gt;
+              &lt;!--/.card-body --&gt;
+            &lt;/div&gt;
+            &lt;!-- /.card --&gt;
+          &lt;/article&gt;
+          &lt;!-- /article --&gt;
+        &lt;/div&gt;
+        &lt;!-- /.item-inner --&gt;
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        &lt;div class=&quot;item-inner&quot;&gt;
+          &lt;article&gt;
+            &lt;div class=&quot;card&quot;&gt;
+              &lt;div class=&quot;card-body&quot;&gt;
+                ...
+              &lt;/div&gt;
+              &lt;!--/.card-body --&gt;
+            &lt;/div&gt;
+            &lt;!-- /.card --&gt;
+          &lt;/article&gt;
+          &lt;!-- /article --&gt;
+        &lt;/div&gt;
+        &lt;!-- /.item-inner --&gt;
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        &lt;div class=&quot;item-inner&quot;&gt;
+          &lt;article&gt;
+            &lt;div class=&quot;card&quot;&gt;
+              &lt;div class=&quot;card-body&quot;&gt;
+                ...
+              &lt;/div&gt;
+              &lt;!--/.card-body --&gt;
+            &lt;/div&gt;
+            &lt;!-- /.card --&gt;
+          &lt;/article&gt;
+          &lt;!-- /article --&gt;
+        &lt;/div&gt;
+        &lt;!-- /.item-inner --&gt;
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+    &lt;/div&gt;
+    &lt;!--/.swiper-wrapper --&gt;
+  &lt;/div&gt;
+  &lt;!-- /.swiper --&gt;
+&lt;/div&gt;
+&lt;!-- /.swiper-container --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-3" class="wrapper pt-16">
+            <h2 class="mb-5">Text Slider</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="swiper-container dots-closer text-center mb-6" data-margin="30" data-dots="true">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum.</p>
+                      </div>
+                      <!--/.swiper-slide -->
+                      <div class="swiper-slide">
+                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum.</p>
+                      </div>
+                      <!--/.swiper-slide -->
+                      <div class="swiper-slide">
+                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum.</p>
+                      </div>
+                      <!--/.swiper-slide -->
+                    </div>
+                    <!--/.swiper-wrapper -->
+                  </div>
+                  <!-- /.swiper -->
+                </div>
+                <!-- /.swiper-container -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-3">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-3" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;swiper-container dots-closer text-center mb-6&quot; data-margin=&quot;30&quot; data-dots=&quot;true&quot;&gt;
+  &lt;div class=&quot;swiper&quot;&gt;
+    &lt;div class=&quot;swiper-wrapper&quot;&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        ...
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        ...
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        ...
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+    &lt;/div&gt;
+    &lt;!--/.swiper-wrapper --&gt;
+  &lt;/div&gt;
+  &lt;!-- /.swiper --&gt;
+&lt;/div&gt;
+&lt;!-- /.swiper-container --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-4" class="wrapper pt-16">
+            <h2 class="mb-3">Image Slider</h2>
+            <p class="lead">Remove <code class="code">.dots-over</code> class to move bullets below the images.</p>
+            <p class="lead mb-3">Use any available <code class="code">.m-*</code>, <code class="code">.p-*</code>, <code class="code">.bg-*</code> and <code class="code">.text-*</code> helper class to style and place the captions. You can change their placement with the help of flex classes as well.</p>
+            <p class="lead">Use <a href="https://animate.style" class="external" target="_blank">animate.css</a> animation and utility classes to add animations and delays to captions.</p>
+            <p class="lead mb-8">For hero slider (slider with fixed height and background cover images) with captions example check out <a href="@@webRoot/demo15.html" class="external" target="_blank">Demo 15</a></p>
+            <div class="card">
+              <div class="card-body">
+                <div class="swiper-container dots-over" data-margin="5" data-dots="true" data-nav="true" data-autoheight="true">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide bg-overlay bg-overlay-400 rounded">
+                        <img src="@@webRoot/assets/img/photos/is1.jpg" alt="" />
+                        <div class="caption-wrapper p-12">
+                          <div class="caption bg-white rounded px-4 py-3 mt-auto animate__animated animate__slideInDown animate__delay-1s"><h5 class="mb-0">Vivamus sagittis lacus augue</h5></div>
+                          <!--/.caption -->
+                        </div>
+                        <!--/.caption-wrapper -->
+                      </div>
+                      <!--/.swiper-slide -->
+                      <div class="swiper-slide rounded">
+                        <img src="@@webRoot/assets/img/photos/is2.jpg" alt="" />
+                        <div class="caption-wrapper p-12">
+                          <div class="caption bg-white rounded px-4 py-3 mx-auto mt-auto animate__animated animate__slideInDown animate__delay-1s"><h5 class="mb-0">Vivamus sagittis lacus augue</h5></div>
+                          <!--/.caption -->
+                        </div>
+                        <!--/.caption-wrapper -->
+                      </div>
+                      <!--/.swiper-slide -->
+                      <div class="swiper-slide"><img src="@@webRoot/assets/img/photos/is3.jpg" class="rounded" alt="" /></div>
+                    </div>
+                    <!--/.swiper-wrapper -->
+                  </div>
+                  <!-- /.swiper -->
+                </div>
+                <!-- /.swiper-container -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-4">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-4" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;swiper-container dots-over&quot; data-margin=&quot;5&quot; data-dots=&quot;true&quot; data-nav=&quot;true&quot; data-autoheight=&quot;true&quot;&gt;
+  &lt;div class=&quot;swiper&quot;&gt;
+    &lt;div class=&quot;swiper-wrapper&quot;&gt;
+      &lt;div class=&quot;swiper-slide bg-overlay bg-overlay-400 rounded&quot;&gt;
+        &lt;img src=&quot;./assets/img/photos/is1.jpg&quot; alt=&quot;&quot; /&gt;
+        &lt;div class=&quot;caption-wrapper p-12&quot;&gt;
+          &lt;div class=&quot;caption bg-white rounded px-4 py-3 mt-auto animate__animated animate__slideInDown animate__delay-1s&quot;&gt;&lt;h5 class=&quot;mb-0&quot;&gt;Caption&lt;/h5&gt;&lt;/div&gt;
+          &lt;!--/.caption --&gt;
+        &lt;/div&gt;
+        &lt;!--/.caption-wrapper --&gt;
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+      &lt;div class=&quot;swiper-slide rounded&quot;&gt;
+        &lt;img src=&quot;./assets/img/photos/is2.jpg&quot; alt=&quot;&quot; /&gt;
+        &lt;div class=&quot;caption-wrapper p-12&quot;&gt;
+          &lt;div class=&quot;caption bg-white rounded px-4 py-3 mx-auto mt-auto animate__animated animate__slideInDown animate__delay-1s&quot;&gt;&lt;h5 class=&quot;mb-0&quot;&gt;Caption&lt;/h5&gt;&lt;/div&gt;
+          &lt;!--/.caption --&gt;
+        &lt;/div&gt;
+        &lt;!--/.caption-wrapper --&gt;
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;&lt;img src=&quot;./assets/img/photos/is3.jpg&quot; class=&quot;rounded&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--/.swiper-wrapper --&gt;
+  &lt;/div&gt;
+  &lt;!-- /.swiper --&gt;
+&lt;/div&gt;
+&lt;!-- /.swiper-container --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-5" class="wrapper pt-16">
+            <h2 class="mb-5">Thumbnail Slider</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="swiper-container swiper-thumbs-container dots-over" data-margin="10" data-dots="false" data-nav="true" data-thumbs="true">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <figure class="rounded"><img src="@@webRoot/assets/img/photos/shs1.jpg" srcset="@@webRoot/assets/img/photos/shs1@2x.jpg 2x" alt="" /><a class="item-link" href="@@webRoot/assets/img/photos/shs1@2x.jpg" data-glightbox data-gallery="product-group"><i class="uil uil-focus-add"></i></a></figure>
+                      </div>
+                      <!--/.swiper-slide -->
+                      <div class="swiper-slide">
+                        <figure class="rounded"><img src="@@webRoot/assets/img/photos/shs2.jpg" srcset="@@webRoot/assets/img/photos/shs2@2x.jpg 2x" alt="" /><a class="item-link" href="@@webRoot/assets/img/photos/shs2@2x.jpg" data-glightbox data-gallery="product-group"><i class="uil uil-focus-add"></i></a></figure>
+                      </div>
+                      <!--/.swiper-slide -->
+                      <div class="swiper-slide">
+                        <figure class="rounded"><img src="@@webRoot/assets/img/photos/shs3.jpg" srcset="@@webRoot/assets/img/photos/shs3@2x.jpg 2x" alt="" /><a class="item-link" href="@@webRoot/assets/img/photos/shs3@2x.jpg" data-glightbox data-gallery="product-group"><i class="uil uil-focus-add"></i></a></figure>
+                      </div>
+                      <!--/.swiper-slide -->
+                      <div class="swiper-slide">
+                        <figure class="rounded"><img src="@@webRoot/assets/img/photos/shs4.jpg" srcset="@@webRoot/assets/img/photos/shs4@2x.jpg 2x" alt="" /><a class="item-link" href="@@webRoot/assets/img/photos/shs4@2x.jpg" data-glightbox data-gallery="product-group"><i class="uil uil-focus-add"></i></a></figure>
+                      </div>
+                      <!--/.swiper-slide -->
+                    </div>
+                    <!--/.swiper-wrapper -->
+                  </div>
+                  <!-- /.swiper -->
+                  <div class="swiper swiper-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="@@webRoot/assets/img/photos/shs1-th.jpg" srcset="@@webRoot/assets/img/photos/shs1-th@2x.jpg 2x" class="rounded" alt="" /></div>
+                      <div class="swiper-slide"><img src="@@webRoot/assets/img/photos/shs2-th.jpg" srcset="@@webRoot/assets/img/photos/shs2-th@2x.jpg 2x" class="rounded" alt="" /></div>
+                      <div class="swiper-slide"><img src="@@webRoot/assets/img/photos/shs3-th.jpg" srcset="@@webRoot/assets/img/photos/shs3-th@2x.jpg 2x" class="rounded" alt="" /></div>
+                      <div class="swiper-slide"><img src="@@webRoot/assets/img/photos/shs4-th.jpg" srcset="@@webRoot/assets/img/photos/shs4-th@2x.jpg 2x" class="rounded" alt="" /></div>
+                    </div>
+                    <!--/.swiper-wrapper -->
+                  </div>
+                  <!-- /.swiper -->
+                </div>
+                <!-- /.swiper-container -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-5">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-5" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+          <pre class="language-html">
+<code>&lt;div class=&quot;swiper-container swiper-thumbs-container dots-over&quot; data-margin=&quot;10&quot; data-dots=&quot;false&quot; data-nav=&quot;true&quot; data-thumbs=&quot;true&quot;&gt;
+  &lt;div class=&quot;swiper&quot;&gt;
+    &lt;div class=&quot;swiper-wrapper&quot;&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;./assets/img/photos/shs1.jpg&quot; alt=&quot;&quot; /&gt;&lt;a class=&quot;item-link&quot; href=&quot;./assets/img/photos/shs1@2x.jpg&quot; data-glightbox data-gallery=&quot;product-group&quot;&gt;&lt;i class=&quot;uil uil-focus-add&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;./assets/img/photos/shs2.jpg&quot; alt=&quot;&quot; /&gt;&lt;a class=&quot;item-link&quot; href=&quot;./assets/img/photos/shs2@2x.jpg&quot; data-glightbox data-gallery=&quot;product-group&quot;&gt;&lt;i class=&quot;uil uil-focus-add&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;./assets/img/photos/shs3.jpg&quot; alt=&quot;&quot; /&gt;&lt;a class=&quot;item-link&quot; href=&quot;./assets/img/photos/shs3@2x.jpg&quot; data-glightbox data-gallery=&quot;product-group&quot;&gt;&lt;i class=&quot;uil uil-focus-add&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;./assets/img/photos/shs4.jpg&quot; alt=&quot;&quot; /&gt;&lt;a class=&quot;item-link&quot; href=&quot;./assets/img/photos/shs4@2x.jpg&quot; data-glightbox data-gallery=&quot;product-group&quot;&gt;&lt;i class=&quot;uil uil-focus-add&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+      &lt;!--/.swiper-slide --&gt;
+    &lt;/div&gt;
+    &lt;!--/.swiper-wrapper --&gt;
+  &lt;/div&gt;
+  &lt;!-- /.swiper --&gt;
+  &lt;div class=&quot;swiper swiper-thumbs&quot;&gt;
+    &lt;div class=&quot;swiper-wrapper&quot;&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;&lt;img src=&quot;./assets/img/photos/shs1-th.jpg&quot; class=&quot;rounded&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;&lt;img src=&quot;./assets/img/photos/shs2-th.jpg&quot; class=&quot;rounded&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;&lt;img src=&quot;./assets/img/photos/shs3-th.jpg&quot; class=&quot;rounded&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;&lt;img src=&quot;./assets/img/photos/shs4-th.jpg&quot; class=&quot;rounded&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--/.swiper-wrapper --&gt;
+  &lt;/div&gt;
+  &lt;!-- /.swiper --&gt;
+&lt;/div&gt;
+&lt;!-- /.swiper-container --&gt;</code>
+</pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="instructions" class="wrapper py-16">
+            <h2 class="mb-5">Instructions</h2>
+            <div class="card">
+              <div class="card-body">
+                <h4>Data Attributes</h4>
+                <p>Specifically created for the template to be used on HTML. Apply any attribute to <code class="code">.swiper-container</code> to set swiper options.</p>
+                <table class="table mb-10">
+                  <thead class="text-navy">
+                    <tr>
+                      <th scope="col" class="col-3">Attribute</th>
+                      <th scope="col">Default</th>
+                      <th scope="col">Options</th>
+                      <th scope="col" class="col-5">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">data-effect</code></td>
+                      <td>slide</td>
+                      <td>slide | fade</td>
+                      <td>Slide transition effect.</td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">data-items</code></td>
+                      <td>3</td>
+                      <td>number</td>
+                      <td>Number of items per view in all devices.</td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">data-items-xs</code></td>
+                      <td>1</td>
+                      <td>number</td>
+                      <td>Number of items on screen width <mark class="doc mt-n1">0 - 575px</mark></td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">data-items-sm</code></td>
+                      <td>items-xs</td>
+                      <td>number</td>
+                      <td>Number of items on screen width <mark class="doc mt-n1">576px - 767px</mark></td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">data-items-md</code></td>
+                      <td>items-sm</td>
+                      <td>number</td>
+                      <td>Number of items on screen width <mark class="doc mt-n1">768px - 991px</mark></td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">data-items-lg</code></td>
+                      <td>items-md</td>
+                      <td>number</td>
+                      <td>Number of items on screen width <mark class="doc mt-n1">992px - 1199px</mark></td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">data-items-xl</code></td>
+                      <td>items-lg</td>
+                      <td>number</td>
+                      <td>Number of items on screen width <mark class="doc mt-n1">1200px - 1400px</mark></td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">data-items-xxl</code></td>
+                      <td>items-xl</td>
+                      <td>number</td>
+                      <td>Number of items on screen width <mark class="doc mt-n1">1400px and above</mark></td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">data-speed</code></td>
+                      <td>500</td>
+                      <td>number</td>
+                      <td>Duration of transition between slides (in ms).</td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">data-autoplay</code></td>
+                      <td>false</td>
+                      <td>true | false</td>
+                      <td>Enable/disable autoplay.</td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">data-autoplaytime</code></td>
+                      <td>5000</td>
+                      <td>number</td>
+                      <td><p>Delay between transitions (in ms).</p>
+                      <p>If you need to specify different delay for specific slides you can do it by using <code class="code">data-swiper-autoplay</code> (in ms) attribute on slide.</p></td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">data-autoheight</code></td>
+                      <td>false</td>
+                      <td>true | false</td>
+                      <td>Set to true and slider wrapper will adapt its height to the height of the currently active slide.</td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">data-margin</code></td>
+                      <td>30</td>
+                      <td>number</td>
+                      <td>Distance between slides in px.</td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">data-loop</code></td>
+                      <td>false</td>
+                      <td>true | false</td>
+                      <td>Set to true to enable continuous loop mode.</td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">data-nav</code></td>
+                      <td>false</td>
+                      <td>true | false</td>
+                      <td>Enable/disable navigation arrows.</td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">data-dots</code></td>
+                      <td>false</td>
+                      <td>true | false</td>
+                      <td>Enable/disable pagination bullets.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4>Alternative styles for controls</h4>
+                <p>Use the following classes with <code class="code">.swiper-container</code> to change navigation styles.</p>
+                <table class="table mb-10">
+                  <thead class="text-navy">
+                    <tr>
+                      <th scope="col" class="col-4">Class</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">.swiper-hero</code></td>
+                      <td>Enables hero slider, ie: <a href="@@webRoot/demo15.html" class="external mt-n1" target="_blank">Demo 15</a></td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">.swiper-fullscreen</code></td>
+                      <td>Enables fullscreen slider, ie: <a href="@@webRoot/demo23.html" class="external mt-n1" target="_blank">Demo 23</a></td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">.nav-dark</code></td>
+                      <td>Changes arrow background to dark color.</td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">.nav-color</code></td>
+                      <td>Changes arrow background to primary color.</td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">.nav-bottom</code></td>
+                      <td>Moves arrows below the slider.</td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">.nav-start</code></td>
+                      <td>Moves arrows from center to left. Requires <code class="code mt-n1">.nav-bottom</code></td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">.dots-light</code></td>
+                      <td>Changes bullet colors to white.</td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">.dots-start</code></td>
+                      <td>Moves bullets from center to left.</td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">.dots-over</code></td>
+                      <td>Moves bullets on the slider.</td>
+                    </tr>
+                    <tr>
+                      <td class="ps-0"><code class="code my-0">.dots-closer</code></td>
+                      <td>Moves bullets closer below the slider.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4>Full examples</h4>
+                 <a href="@@webRoot/docs/blocks/blog.html" class="external" target="_blank">Blog Blocks</a>, <a href="@@webRoot/docs/blocks/testimonials.html" class="external" target="_blank">Testimonials Blocks</a>, <a href="@@webRoot/docs/blocks/portfolio.html" class="external" target="_blank">Portfolio Blocks</a>, <a href="@@webRoot/docs/blocks/clients.html" class="external" target="_blank">Client Blocks</a></p>
+              </div>
+              <!--/.card-body -->
+              </div>
+              <!--/.card -->
+          </section>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  @@include('docs/_footer.html')
+  @@include('_page-progress.html')
+  @@include('_scripts.html')
+</body>
+</html>

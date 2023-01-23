@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\AuthController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +25,11 @@ Route::get( 'shop', [FrontendController::class, 'shop'] )->name( 'shop' );
 Route::get( 'blog', [FrontendController::class, 'blog'] )->name( 'blog' );
 Route::get( 'login', [FrontendController::class, 'login'] )->name( 'login' );
 Route::get( 'register', [FrontendController::class, 'register'] )->name( 'register' );
+
+
+// Auth Routes
+
+
+Route::post( 'login', [AuthController::class, 'login'] )->name( 'user-login' );
+Route::post( 'register', [AuthController::class, 'register'] )->name( 'user-registration' );
+
